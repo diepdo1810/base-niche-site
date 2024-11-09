@@ -62,8 +62,9 @@ const FormattedDatetime = ({ pubDatetime, modDatetime }: DatetimesProps) => {
   );
 
   const date = myDatetime.toLocaleDateString(LOCALE.langTag, {
+    weekday: "long",
     year: "numeric",
-    month: "short",
+    month: "long",
     day: "numeric",
   });
 
