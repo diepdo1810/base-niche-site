@@ -18,6 +18,14 @@ if (breadcrumbDisplayList[0] === "bai-viet") {
   breadcrumbDisplayList[1] = `Trang ${breadcrumbDisplayList[1] || 1}`;
 }
 
+if (breadcrumbDisplayList[0] === "ve-blog") {
+  breadcrumbDisplayList[0] = "Về blog";
+}
+
+if (breadcrumbDisplayList[0] === "luu-tru") {
+  breadcrumbDisplayList[0] = "Lưu trữ";
+}
+
 breadcrumbList[0] === "posts" &&
   breadcrumbList.splice(0, 2, `Posts (page ${breadcrumbList[1] || 1})`);
 

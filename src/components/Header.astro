@@ -75,16 +75,21 @@ const { activeNav } = Astro.props;
               Từ khóa
             </a>
           </li>
-          <li>
+          <li class="hidden">
             <a href="/about/" class={activeNav === "about" ? "active" : ""}>
               About
+            </a>
+          </li>
+          <li>
+            <a href="/ve-blog/" class={activeNav === "about" ? "active" : ""}>
+              Về blog
             </a>
           </li>
           {
             SITE.showArchives && (
               <li>
                 <LinkButton
-                  href="/archives/"
+                  href="/luu-tru/"
                   className={`focus-outline flex justify-center p-3 sm:p-1`}
                   ariaLabel="archives"
                   title="Archives"
