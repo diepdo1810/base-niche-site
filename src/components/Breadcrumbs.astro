@@ -26,6 +26,10 @@ if (breadcrumbDisplayList[0] === "luu-tru") {
   breadcrumbDisplayList[0] = "Lưu trữ";
 }
 
+if (breadcrumbDisplayList[0] === "tim-kiem") {
+  breadcrumbDisplayList[0] = "Tìm kiếm";
+}
+
 breadcrumbList[0] === "posts" &&
   breadcrumbList.splice(0, 2, `Posts (page ${breadcrumbList[1] || 1})`);
 
@@ -46,7 +50,6 @@ if (breadcrumbDisplayList[0] === "Từ khóa" && !isNaN(Number(breadcrumbDisplay
     `${Number(breadcrumbDisplayList[2]) === 1 ? "" : "(page " + breadcrumbDisplayList[2] + ")"}`
   );
 }
-
 ---
 
 <nav class="breadcrumb" aria-label="breadcrumb">
