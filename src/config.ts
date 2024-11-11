@@ -12,6 +12,7 @@ export const SITE: Site = {
   postPerPage: 6,
   scheduledPostMargin: 15 * 60 * 1000,
   showArchives: true,
+  titleHeader: "Base Niche Site",
 };
 
 export const HERO = {
