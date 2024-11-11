@@ -40,7 +40,7 @@ export default function Datetime({
       </svg>
       {modDatetime && modDatetime > pubDatetime ? (
         <span className={`italic ${size === "sm" ? "text-sm" : "text-base"}`}>
-          Updated:
+          Đã cập nhật:
         </span>
       ) : (
         <span className="sr-only">Published:</span>
@@ -91,7 +91,7 @@ const EditPost = ({ editPost, postId }: EditPostProps) => {
   if (appendFilePath && postId) {
     editPostUrl += `/${postId}`;
   }
-  const editPostText = editPost?.text ?? SITE?.editPost?.text ?? "Edit";
+  const editPostText = editPost?.text ?? SITE?.editPost?.text ?? "Biên tập";
 
   return (
     showEditPost && (

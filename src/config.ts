@@ -1,23 +1,24 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  website: "https://base-niche-site.vercel.app/", // replace this with your deployed domain
+  author: "Base Niche Site",
+  profile: "https://avatars.githubusercontent.com/u/93646638?v=4",
+  desc: "A niche site built with Astro",
+  title: "Base Niche Site",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
-  postPerPage: 3,
-  scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
+  postPerPage: 6,
+  scheduledPostMargin: 15 * 60 * 1000,
   showArchives: true,
-  editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
-    text: "Suggest Changes",
-    appendFilePath: true,
-  },
 };
+
+export const HERO = {
+  enable: true,
+  title: "Base Niche Site",
+  description: "A niche site built with Astro",
+}
 
 export const LOCALE = {
   lang: "vi", // html lang code. Set this empty and default will be "en"
@@ -34,7 +35,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/diepdo1810/blog",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -42,19 +43,19 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
+    active: false,
   },
   {
     name: "LinkedIn",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
+    active: false,
   },
   {
     name: "Mail",

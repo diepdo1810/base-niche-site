@@ -39,7 +39,7 @@ const structuredData = {
   "@type": "BlogPosting",
   headline: `${title}`,
   image: `${socialImageURL}`,
-  datePublished: `${pubDatetime?.toISOString()}`,
+  datePublished: `${pubDatetime?.toISOString() ?? new Date().toISOString()}`,
   ...(modDatetime && { dateModified: modDatetime.toISOString() }),
   author: [
     {

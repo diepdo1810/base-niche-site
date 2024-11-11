@@ -25,3 +25,9 @@ export type SocialObjects = {
   active: boolean;
   linkTitle: string;
 }[];
+
+export type Here = {
+  enable: boolean;
+  title: string;
+  description: string;
+}
